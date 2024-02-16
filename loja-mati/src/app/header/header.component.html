@@ -1,0 +1,51 @@
+<header class="main-header">
+
+  <div class="logo-container">
+      <img src="assets/logo.png" class="logo">
+    </div>
+     <h1 class="main-header__title">
+      <span class="main-header__title--blue">Mati</span><span class="main-header__title--rosa"> confeitaria</span>
+    </h1>
+  <div class="container-menu">
+    <div class="">
+        <nav class="main-header__menu">
+            <ul>
+                <li>
+                    <a routerLink="produtos">Produtos</a>
+                </li>
+                <li>
+                    <a routerLink="carrinho">
+                        <div style="display: inline-block;">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Carrinho
+                            <span class="badge-carrinho">{{this.carrinhoService.getCarrinho().length}}</span>
+                        </div>
+                    </a>
+                </li>
+                <li><a routerLink="contato">Contato</a></li>
+                <div class="avatar-image">
+                    <img src="assets/avatar_woman.png" class="avatar-image" [matMenuTriggerFor]="menu" color="accent">
+                    <mat-menu #menu="matMenu" class="mat-menu-css">
+                        <span style="color:rgb(120, 122, 252); text-align: center;"><p style="font-weight: 500; font-size: 18pt;">Conta</p></span>
+                        <button mat-menu-item><p style="color: rgb(255, 255, 255);">Opção 1</p></button>
+                        <mat-divider></mat-divider>
+                        <button mat-menu-item><p style="color: white;" ><i class="fa-solid fa-dolly"></i> Seus pedidos</p></button>
+                        <mat-divider></mat-divider>
+                        <button mat-menu-item><p style="color: white;"><i class="fa-solid fa-gear"></i> Configurações</p></button>
+                        <mat-divider></mat-divider>
+                        <button mat-menu-item><p style="color: white;"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sair</p></button>
+                    </mat-menu>
+                </div>
+                
+            </ul>
+            
+        </nav>
+        
+    </div>
+      
+      <div >
+        <app-barra-de-pesquisa></app-barra-de-pesquisa>
+      </div>
+      
+  </div>
+</header>

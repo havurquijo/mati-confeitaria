@@ -1,0 +1,91 @@
+.main-header {    
+  padding: 10px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 1;
+  margin-top: 20px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.main-header__title {    
+  font-size: 80px;
+  letter-spacing: -1.5px;    
+  font-family: serif;
+}
+
+.main-header__title--blue {
+  color: var(--blue);
+  color: blue;
+  font-size:100px;
+}
+
+.main-header__title--rosa {
+  color: var(--pink);
+  color: rgb(201, 21, 159);
+  font-size:40px;
+}
+
+.main-header__menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-header__menu a {
+  padding: 10px 10px;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 22px;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover {
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.container-menu {
+  display: inline-block;
+  flex-direction: column;
+  row-gap: 40px;
+  flex: 1;
+}
+
+.badge-carrinho {
+  background-color: var(--dark-blue);
+  padding: 5px 10px;    
+  border-radius: 4px;
+  color: white;
+}
+
+
+.logo-container {
+  flex: 0;
+
+}
+
+.logo {
+  width: 120px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Altura automática para manter a proporção */
+  align-self: center;
+}
+.logo:hover{
+  filter: contrast(1.5);
+}
+
+.avatar-image{
+  border-radius: 50%;
+  max-width: 50px;
+  margin-left: 8%;
+  margin-right: 2.5%;
+}
+.avatar-image:hover{
+  filter: brightness(1.1);
+}

@@ -1,0 +1,24 @@
+<section class="product-list">
+    <div class="product-list__card" *ngFor="let produto of produtos">
+        <a routerLink="/produtos/{{produto.id}}" class="product-list__link">
+            <div class="slideshow-container">
+                <div>
+                    <img [src]="produto.image[0]" class="product-image">
+                </div>
+                <!-- Botões de navegação --> 
+                <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+            </div>
+            <!-- Pontos indicadores do slide -->
+            <!--<div style="text-align:center;" >
+                <span class="dot" *ngFor="let dot of this.dots_quantity(produto.image)" onclick="currentSlide(dot)"></span>
+            </div>-->
+
+            <h2 class="product-item__name">{{produto.nome}}</h2>
+            <p class="product-item__price-description">a partir de:</p>
+            <p class="product-item__price">R{{produto.price | currency}}</p>
+            <button class="product-item__buy-button" type="button">Comprar</button>
+        </a>
+    </div>
+</section>
+
