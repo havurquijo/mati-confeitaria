@@ -1,0 +1,53 @@
+<section class="product__container">
+    <div class="product-image__container">
+        <img [src]="produto?.image?.at(0)">
+    </div>
+    <div class="product-deion__container">
+        <h2 class="product__name">{{produto?.nome}}</h2>
+        <h3 class="product__price">{{produto?.price|currency:"BRL"}}</h3>
+        <p>Estoque disponível</p>
+        <label>
+            Quantidade: <input type="number" [(ngModel)]="quantidade" min="1"> unidade(s)
+        </label>
+        <p class="product__avaiability">{{produto?.estoque}} unidade(s) em estoque</p>
+        <button (click)="adicionarAoCarrinho()"><i class="fa-solid fa-cart-plus"></i></button>
+    </div>
+    <div class="product-mat-tab__container">
+        <mat-tab-group color="primary" backgroundColor="accent">
+            <mat-tab label="Sabores premium">  
+                <mat-selection-list [multiple]="false" color="warn">
+                    <mat-list-option><p>Pistache</p></mat-list-option>
+                    <mat-divider></mat-divider>
+                    <mat-list-option><p>Pistache</p></mat-list-option>
+                    <mat-divider></mat-divider>
+                    <mat-list-option><p>Pistache</p></mat-list-option>
+                    <mat-divider></mat-divider>
+                    <mat-list-option><p>Pistache</p></mat-list-option>
+                    <mat-divider></mat-divider>
+                </mat-selection-list>
+            </mat-tab>
+            <mat-tab label="Complementos"><mat-selection-list [multiple]="false" style="color: red;">
+                <mat-list-option style="color: red;">afasf</mat-list-option>
+                <mat-divider></mat-divider>
+                <mat-list-option>Pistache</mat-list-option>
+                <mat-divider></mat-divider>
+                <mat-list-option>Pistache</mat-list-option>
+                <mat-divider></mat-divider>
+                <mat-list-option>Pistache</mat-list-option>
+                <mat-divider></mat-divider>
+            </mat-selection-list></mat-tab>
+            <mat-tab label="Adicionais">
+                <mat-selection-list [multiple]="false" style="color: red;">
+                    <mat-list-option style="color: red;">afasf</mat-list-option>
+                    <mat-divider></mat-divider>
+                    <mat-list-option>Pistache</mat-list-option>
+                    <mat-divider></mat-divider>
+                    <mat-list-option>Pistache</mat-list-option>
+                    <mat-divider></mat-divider>
+                    <mat-list-option>Pistache</mat-list-option>
+                    <mat-divider></mat-divider>
+                </mat-selection-list>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</section>

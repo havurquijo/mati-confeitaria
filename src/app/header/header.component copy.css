@@ -1,0 +1,96 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do cabeçalho em azul com espaço para o logo e título */
+header {
+  background-color: #3498db; /* Azul */
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  flex: 1; /* Ocupa o espaço disponível */
+}
+
+.logo {
+  width: 80px; /* Ajuste a largura conforme necessário */
+  height: auto; /* Altura automática para manter a proporção */
+}
+
+.title-container {
+  flex: 1; /* Ocupa o espaço disponível */
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  color: #ecf0f1; /* Branco */
+}
+
+/* Estilo do formulário de busca */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: #ecf0f1; /* Branco */
+  color: #3498db; /* Azul */
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilo da navegação em azul */
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ecf0f1;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Estilo do banner em azul */
+.banner {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* Estilo do rodapé em azul */
+footer {
+  background-color: #3498db;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Estilo dos ícones sociais no rodapé em branco */
+footer i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #ecf0f1;
+}
